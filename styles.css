@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 8px;
+    margin-right: 8px;
+    vertical-align: middle; /* Align the input vertically */
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+}
+
+/* Updated style for completed tasks */
+li.completed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+/* Add this style to handle task priorities */
+li[data-priority="low"] {
+    background-color: #dff0d8;
+}
+
+li[data-priority="medium"] {
+    background-color: #fcf8e3;
+}
+
+li[data-priority="high"] {
+    background-color: #f2dede;
+}
+
+/* Add this style to handle task due dates */
+li[data-due-date] {
+    border-left: 5px solid #5bc0de;
+}
+
+/* Added spacing between text and select */
+li > select {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Ensure consistent spacing for buttons */
+li button {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Limit the maximum width of the task name */
+li > span {
+    max-width: 200px; /* Adjust the value based on your preference */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
