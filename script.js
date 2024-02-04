@@ -1,19 +1,19 @@
-// Save tasks to local storage
+// Save tasks 
 function saveTasks() {
     const taskList = document.getElementById("taskList");
     localStorage.setItem("tasks", taskList.innerHTML);
 }
 
-// Retrieve tasks from local storage on page load
+// Retrieve tasks 
 function loadTasks() {
     const taskList = document.getElementById("taskList");
     taskList.innerHTML = localStorage.getItem("tasks") || "";
 }
 
-// Call loadTasks() when the page loads
+// Call loadTasks() 
 document.addEventListener("DOMContentLoaded", loadTasks);
 
-// Update saveTasks() calls in other functions (addTask, deleteTask)
+// Update saveTasks()
 function addTask() {
     const taskInput = document.getElementById("taskInput");
     const taskList = document.getElementById("taskList");
@@ -57,14 +57,13 @@ function deleteTask(button) {
     saveTasks();
 }
 
-// Update this function to handle task priorities
+// Update function
 function updatePriority(select) {
     const li = select.parentNode;
     li.setAttribute("data-priority", select.value);
     saveTasks();
 }
 
-// Update this function to handle task due dates
 function updateDueDate(input) {
     const li = input.parentNode;
     li.setAttribute("data-due-date", input.value);
