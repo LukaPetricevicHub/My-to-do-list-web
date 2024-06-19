@@ -1,19 +1,15 @@
-// Save tasks 
 function saveTasks() {
     const taskList = document.getElementById("taskList");
     localStorage.setItem("tasks", taskList.innerHTML);
 }
 
-// Retrieve tasks 
 function loadTasks() {
     const taskList = document.getElementById("taskList");
     taskList.innerHTML = localStorage.getItem("tasks") || "";
 }
 
-// Call loadTasks() 
 document.addEventListener("DOMContentLoaded", loadTasks);
 
-// Update saveTasks()
 function addTask() {
     const taskInput = document.getElementById("taskInput");
     const taskList = document.getElementById("taskList");
@@ -57,7 +53,6 @@ function deleteTask(button) {
     saveTasks();
 }
 
-// Update function
 function updatePriority(select) {
     const li = select.parentNode;
     li.setAttribute("data-priority", select.value);
