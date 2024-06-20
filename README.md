@@ -3,8 +3,7 @@
 ## Overview
 This To-Do List application helps users stay organized. It offers a user-friendly interface to add, edit, delete, and mark tasks as complete.
 Adding and editing tasks is quick and intuitive, while deleting helps maintain a clutter-free list. Marking tasks as complete clearly distinguishes 
-finished tasks from pending ones. Perfect for personal and professional use, this application streamlines task management, enhancing total output.
-
+finished tasks from pending ones. Perfect for personal and professional use, this application streamlines task management, enhancing total efficiency.
 ## Features
 - Add new tasks
 - Edit existing tasks
