@@ -51,5 +51,5 @@ def add_task():
     return redirect('/')
 ```
 
-## Results
+## Use
 The application provides a responsive interface to manage tasks. Users can interact with the task list in real-time, making it easy to stay organized.
