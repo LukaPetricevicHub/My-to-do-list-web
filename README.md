@@ -1,7 +1,9 @@
 # To-Do List Application
 
 ## Overview
-This project is a simple To-Do List application built to help users manage their tasks efficiently. It provides a user-friendly interface to add, edit, delete, and mark tasks as complete.
+This To-Do List application helps users stay organized. It offers a user-friendly interface to add, edit, delete, and mark tasks as complete.
+Adding and editing tasks is quick and intuitive, while deleting helps maintain a clutter-free list. Marking tasks as complete clearly distinguishes 
+finished tasks from pending ones. Perfect for personal and professional use, this application streamlines task management, enhancing overall productivity.
 
 ## Features
 - Add new tasks
@@ -51,5 +53,5 @@ def add_task():
     return redirect('/')
 ```
 
-## Use
+## Purpose
 The application provides a responsive interface to manage tasks. Users can interact with the task list in real-time, making it easy to stay organized.
