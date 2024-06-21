@@ -11,10 +11,6 @@ finished tasks from pending ones. Perfect for personal and professional use, thi
 - Mark tasks as complete
 - Filter tasks by status (all, active, completed)
 
-## Requirements
-- Python 3.x
-- Flask
-
 ## Installation
 1. Clone the repository:
     ```bash
