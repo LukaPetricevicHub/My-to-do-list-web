@@ -53,4 +53,4 @@ def add_task():
 ```
 
 ## Purpose
-The application provides a responsive interface to manage tasks. Users can interact with the task list in real-time, making it easy to stay organized.
+The application provides a responsive interface for real-time task management, helping users stay organized.
